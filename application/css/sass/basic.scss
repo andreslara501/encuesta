@@ -1,0 +1,531 @@
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	#page_menu{
+		position: relative !important;
+		#logo{
+			width: 100% !important;
+			height: auto !important;
+			border-radius: 0px !important;
+			.uno{
+				float: none !important;
+			}
+		}
+		#logo_telepacifico{
+			display: none;
+		}
+		#hojas{
+			display: none;
+		}
+	}
+	#page_content{
+		#startpoint{
+			padding-top: 0px;
+		}
+		.degradado-uno{
+			display: none;
+		}
+
+	}
+	#principales_mobiles{
+		img{
+			width: 100%;
+		}
+		.tipo_youtube{
+			img{
+				position: relative;
+				top: -60px;
+			}
+		}
+	}
+	#content-noticias .column:first-child .noticia {
+	    padding-left: 8px !important;
+	}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	//background: url("/theme/img/background.jpg");
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+#menu-responsive{
+	display: none;
+}
+
+#page_menu{
+	position: absolute;
+	z-index: 999999999999999999;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+
+	#logo{
+		display: block;
+		background: #00264E url("/theme/img/logo_back.jpg");
+		padding: 7px 20px;
+		height: 122px;
+		width: 291px;
+		border-radius: 0px 0px 30px 0px;
+		position: relative;
+		.uno{
+			float: left;
+		}
+		.dos{
+			float: left;
+			color: white;
+			padding: 24px 0 0 20px;
+			h1{
+				margin-bottom: 0px;
+				text-align: left;
+			}
+			.a{
+				font-size: 28px;
+				line-height: 25px;
+			}
+			.b{
+				font-size: 39px;
+				line-height: 35px;
+			}
+		}
+		#hojas{
+			position: absolute;
+			left: 291px;
+			top: 0px;
+			z-index: -1;
+		}
+	}
+
+	/*Interna*/
+
+	#logo_interna{
+		background: #00264E;
+		//height: 50px;
+		//width: 291px;
+			padding: 20px;
+		.uno{
+			float: left;
+		}
+		.dos{
+			float: left;
+			color: white;
+			padding: 0px 0px 0px 10px;
+			h1{
+				margin-bottom: 0px;
+				text-align: left;
+			}
+			.a{
+				font-size: 17px;
+				line-height: 17px;
+			}
+			.b{
+				font-size: 23px;
+				line-height: 23px;
+			}
+		}
+	}
+
+	#menu{
+		display: inline-block;
+		padding: 20px 0px;
+		z-index: 999999999;
+		li{
+			list-style: none;
+			float: left;
+			a{
+				font-size: 14px;
+				line-height: 14px;
+
+				color: #00264E;
+				padding: 7px 10px;
+				display: block;
+			}
+			.select{
+				background: #FF402F;
+				color: white;
+				font-weight: bold;
+				border-radius: 6px;
+			}
+		}
+	}
+
+	#logo_telepacifico{
+		float:right;
+		font-weight: bold;
+		margin-top: 10px;
+		p{
+			color: red;
+		}
+	}
+}
+
+ #startpoint{
+	padding-top: 75px;
+
+	#slider {
+		.orbit-slide{
+			a{
+				display: block;
+				.tipo_youtube{
+					overflow: hidden;
+					height: 100%;
+					img{
+						position: relative;
+					}
+				}
+				img{
+					width: 100%;
+				}
+				.texto{
+					position: absolute;
+					bottom:70px;
+					left: 50px;
+					right: 50px;
+					background: rgba(255, 204, 0, 0.8);
+					font-size: 29px;
+					padding: 8px 20px;
+					color: black;
+					font-weight: bold;
+					p{
+						font-size: 15px;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+		width: 100%;
+		/* whatever width you want */
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		&:after {
+			padding-top: 41%;
+			/* 16:9 ratio */
+			display: block;
+			content: '';
+		}
+		.main{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			/* fill parent */
+			background-color: deepskyblue;
+			/* let's see it! */
+			color: white;
+		}
+		.degradado-uno{
+			position: relative;
+			top:0px;
+			width: 100%;
+			height: 50px;
+			z-index: 100;
+			background: red; /* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255, 0)); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255, 0)); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255, 0)); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255, 0)); /* Standard syntax */
+		}
+		.degradado-dos{
+			display: none;
+			position: absolute;
+			bottom:0px;
+			width: 100%;
+			height: 50px;
+			z-index: 100;
+			background: red; /* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(rgba(255, 255, 255,0), rgba(255, 255, 255, 1)); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(rgba(255, 255, 255,0), rgba(255, 255, 255, 1)); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(rgba(255, 255, 255,0), rgba(255, 255, 255, 1)); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(rgba(255, 255, 255,0), rgba(255, 255, 255, 1)); /* Standard syntax */
+		}
+	}
+	h2{
+		background: #dadada;
+		font-size: 20px;
+		padding: 8px 20px;
+		display: inline-block;
+		width: 100%;
+		font-weight: bold;
+		a{
+			color: #0140D4;
+			padding-left: 15px;
+			text-decoration: underline;
+			float: right;
+			font-weight: normal;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+ }
+
+#content-noticias{
+	.noticia{
+		padding: 12px 8px;
+		display: block;
+		h3{
+			font-size: 17px;
+			line-height: 20px;
+			font-weight: bold;
+			padding: 12px 0;
+			margin: 0px;
+			color: black;
+		}
+		p{
+			font-size: 14px;
+			line-height: 16px;
+			color: rgb(74, 74, 74);
+		}
+	}
+	.noticia:hover{
+		h3, p{
+			color: grey;
+		}
+	}
+	.column:first-child{
+		.noticia{
+			padding-left: 0px;
+		}
+	}
+	.column:last-child{
+		.noticia{
+			padding-right: 0px;
+		}
+	}
+}
+
+#content-eventos{
+	.evento{
+		padding: 9px 0;
+		margin-right: 8px;
+		display: block;
+		border-bottom: #DBDBDB 1px solid;
+		.calendario{
+			width: 53px;
+			height: 53px;
+			background: #FFFF00;
+			padding: 4px;
+			color: black;
+			float:left;
+			.numero{
+				font-size: 30px;
+				line-height: 30px;
+				padding: 0px;
+				margin: 0px;
+				text-align: center;
+			}
+			.mes{
+				font-size: 15px;
+				line-height: 15px;
+				padding: 0px;
+				margin: 0px;
+				text-align: center;
+			}
+		}
+		.texto{
+			float: left;
+			font-size: 15px;
+			line-height: 17px;
+			color: black;
+			padding: 10px 8px;
+			margin: 0px;
+			display: block;
+			width: 80%;
+		}
+	}
+	.evento:hover{
+		.texto{
+			color: rgb(26,100,128);
+		}
+	}
+}
+
+/* Intermedias */
+.intermedias{
+	h2{
+		background: rgba(255, 204, 0, 1);
+		font-size: 26px;
+		padding: 8px 20px;
+		display: inline-block;
+	}
+	hr{
+
+	}
+	a{
+		display: block;
+		color: black;
+	}
+}
+
+.interna{
+	h2{
+		background: #dadada;
+		font-size: 26px;
+		padding: 8px 20px;
+		display: inline-block;
+		width: 100%;
+		font-weight: bold;
+		margin: 30px 0px;
+	}
+}
+
+.noticia_principal{
+	&:hover{
+		color: grey !important;
+	}
+}
+
+.grilla_noticias{
+	.noticia_interna_grilla{
+		padding: 12px 8px;
+		display: block;
+		a{
+			h3{
+				font-size: 17px;
+				line-height: 20px;
+				font-weight: bold;
+				padding: 12px 0;
+				margin: 0px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 20px;
+				text-align: justify;
+			}
+			&:hover{
+				color: grey !important;
+			}
+		}
+	}
+}
+
+#migas{
+	margin: 100px 0px 0px 300px;
+}
+
+/* Orbit */
+.orbit-previous{
+	border-radius: 0px 10px 10px 0px;
+	background: rgba(255,255,255,0.5);
+	color: black;
+	padding-top: 0.8rem;
+}
+.orbit-next{
+	border-radius: 10px 0px 0px 10px;
+	background: rgba(255,255,255,0.5);
+	color: black;
+	padding-top: 0.8rem;
+}
+.orbit-next:active, .orbit-next:focus, .orbit-next:hover, .orbit-previous:active, .orbit-previous:focus, .orbit-previous:hover {
+    background-color:white;
+}
+.orbit-bullets{
+	text-align: center;
+	bottom: 30px !important;
+	top: auto !important;
+	left: 0px;
+	right: 0px;
+	position: absolute !important;
+	z-index: 999999999;
+	button{
+		border: 2px solid #FFCC00;
+		background: transparent;
+		box-shadow: 1px 1px 1px rgba(255,255,255,0.2);
+		&.is-active{
+			background-color: #FFCC00 !important;
+		}
+	}
+}
+
+
+
+
+/* Publicidad */
+
+#publicidad1{
+	width: 100%;
+	height: 460px;
+	background: #FFCCCC;
+}
+
+@media screen and (max-width: 40em) {
+	.js #menu-responsive {
+		display:none;
+	}
+
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+.no-padding{
+	padding: 0px;
+}
+	.no-padding-left{
+		padding-left: 0px;
+	}
+.no-margin{
+	margin: 0px;
+}
+.paddingleft-20px{
+	padding-right: 20px !important;
+}
+
+
+/* Mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+
+.alto_responsive{
+	width: 100%;
+	/* whatever width you want */
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	&:after {
+		padding-top: 47%;
+		/* 16:9 ratio */
+		display: block;
+		content: '';
+	}
+	.main{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		/* fill parent */
+		background-color: black;
+		/* let's see it! */
+		color: white;
+	}
+}
